@@ -1,0 +1,17 @@
+﻿<Window x:Name="SettingsWindow" x:Class="WPFMissileCommand.Settings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFMissileCommand"
+        mc:Ignorable="d"
+        Title="Settings" Height="263.235" Width="166.912" ResizeMode="NoResize" Closed="SettingsWindow_Closed">
+    <Grid>
+        <Button x:Name="button" Content="Return" Margin="10,0,10,10" Height="28" VerticalAlignment="Bottom" Click="button_Click"/>
+        <CheckBox x:Name="branchMayhemCheckBox" Content="Branch Mayhem" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="missileMayhemCheckBox" Content="Missile Mayhem" HorizontalAlignment="Left" Margin="10,31,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="planeMayhemCheckBox" Content="Plane Mayhem" HorizontalAlignment="Left" Margin="10,52,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="uAmmoCheckBox" Content="Unlimited Ammo" HorizontalAlignment="Left" Margin="10,73,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

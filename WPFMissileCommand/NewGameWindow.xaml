@@ -1,0 +1,26 @@
+﻿<Window x:Name="newGameDialog" x:Class="WPFMissileCommand.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFMissileCommand"
+        mc:Ignorable="d"
+        Title="New Game" Height="300" Width="300" ResizeMode="CanMinimize" Closed="newGameDialog_Closed">
+    <Grid>
+        <Button x:Name="beginGameButton" Content="BEGIN GAME" Margin="10,218,10,10" IsEnabled="False" Click="beginGameButton_Click" FontSize="20" FontFamily="Wide Latin"/>
+        <ComboBox x:Name="baseBox" Margin="0,10,10,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="120" SelectionChanged="baseBox_SelectionChanged">
+            <ComboBoxItem Content="3 Bases, 6 Cites"/>
+            <ComboBoxItem Content="1 Base, 1 City"/>
+            <ComboBoxItem Content="2 Bases, 7 Cites"/>
+        </ComboBox>
+        <Label x:Name="label" Content="Number of Bases and Cities" HorizontalAlignment="Left" Margin="15,10,0,0" VerticalAlignment="Top" Height="22" FontFamily="Tw Cen MT Condensed" Width="111" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
+        <Label x:Name="label_Copy1" Content="Difficulty" HorizontalAlignment="Left" Margin="15,111,0,0" VerticalAlignment="Top" Height="22" FontFamily="Tw Cen MT Condensed" Width="111" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
+        <ComboBox x:Name="difficultyBox" Margin="0,111,10,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="120" SelectionChanged="difficultyBox_SelectionChanged">
+            <ComboBoxItem Content="Easy"/>
+            <ComboBoxItem Content="Hard"/>
+            <ComboBoxItem Content="Constant"/>
+        </ComboBox>
+        <Button x:Name="setDefaultButton" Content="Default" Margin="10,138,190,88" Click="setDefaultButton_Click"/>
+
+    </Grid>
+</Window>
